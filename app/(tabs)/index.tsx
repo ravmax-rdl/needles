@@ -1,15 +1,14 @@
-import { Text, View } from "react-native";
+import { HStack } from '@/components/ui/hstack';
+import { Text } from '@/components/ui/text';
+import { SafeAreaView } from 'react-native';
 
-export default function Index() {
+export default function HomeScreen() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <SafeAreaView>
+      <HStack className="justify-between">
+        <Text className="text-2xl font-bold">Home</Text>
+        <Text className="text-2xl font-bold">Home</Text>
+      </HStack>
+    </SafeAreaView>
   );
 }
